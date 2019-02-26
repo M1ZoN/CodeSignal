@@ -44,3 +44,9 @@ def phoneCall(min1, min2_10, min11, s):
             sum += 1
             s -= min11
     return sum
+
+# Given values experience, threshold and reward, 
+# check if you reach the next level after killing the monster.
+
+def reachNextLevel(experience, threshold, reward):
+    return (True if (experience + reward)//threshold > 0 else False)
