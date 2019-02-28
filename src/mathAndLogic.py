@@ -50,3 +50,18 @@ def phoneCall(min1, min2_10, min11, s):
 
 def reachNextLevel(experience, threshold, reward):
     return (True if (experience + reward)//threshold > 0 else False)
+
+# For value1 = 10, weight1 = 5, value2 = 6, weight2 = 4, and maxW = 8, 
+# the output should be knapsackLight(value1, weight1, value2, weight2, maxW) = 10.
+    
+def knapsackLight(value1, weight1, value2, weight2, maxW):
+    if weight1 + weight2 <= maxW:
+        return value1 + value2
+    elif value1 >= value2 and weight1 <=maxW:
+        return value1
+    elif value1 <= value2 and weight2 <=maxW :
+        return value2
+    elif weight1 <= maxW:
+        return value1
+    else:
+        return 0
