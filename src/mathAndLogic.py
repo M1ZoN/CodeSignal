@@ -70,3 +70,14 @@ def knapsackLight(value1, weight1, value2, weight2, maxW):
 
 def extraNumber(a, b, c):
     return a ^ b ^ c 
+
+# is the process Infinite?
+# given the pseudo code:
+# while a is not equal to b
+#       add 1 to a
+#       subtract 1 from b
+# determine if the code is infinite or not
+
+def isInfiniteProcess(a, b):
+    res = (False if ((b - a) % 2 == 0 and a <= b)  else True)
+    return res
