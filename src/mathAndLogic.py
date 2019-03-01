@@ -65,3 +65,8 @@ def knapsackLight(value1, weight1, value2, weight2, maxW):
         return value1
     else:
         return 0
+
+# How to count extra number
+
+def extraNumber(a, b, c):
+    return a ^ b ^ c 
