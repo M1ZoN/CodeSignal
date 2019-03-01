@@ -81,3 +81,11 @@ def extraNumber(a, b, c):
 def isInfiniteProcess(a, b):
     res = (False if ((b - a) % 2 == 0 and a <= b)  else True)
     return res
+
+# Consider an arithmetic expression of the form a#b=c. 
+# Check whether it is possible to replace # with one of the 
+# four signs: +, -, * or / to obtain a correct expression.
+
+def arithmeticExpression(a, b, c):
+    res = (True if (a+b == c or a*b == c or a/b == c or a-b ==c) else False)
+    return res
